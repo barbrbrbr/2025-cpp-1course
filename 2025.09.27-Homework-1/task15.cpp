@@ -1,8 +1,8 @@
-#include <stdio.h>
-int main() 
+#include <cstdio>
+int main()
 {
     long long a = 0;
 	scanf("%lld", &a);
-    printf("%lld\n", a*a);
+    printf("%lld", a*a);
     return 0;
 }

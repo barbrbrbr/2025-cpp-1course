@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include <cstdio>
 int main()
 {
     long long a = 0; //10^9
@@ -8,6 +7,6 @@ int main()
 	scanf("%d %d %d", &a, &b, &c);
     long long f = 0;
     f = a + b + c;
-	printf("%lld\n", f);
+	printf("%lld", f);
 	return 0;
 }

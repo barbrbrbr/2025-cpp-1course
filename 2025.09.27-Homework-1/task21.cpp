@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 
 int main() 
 {
@@ -11,6 +11,6 @@ int main()
     person = k/n;  
     korzina = k%n;
     grustny = (n - k % n) % n;
-    printf("%lld %lld %lld\n", person, korzina, grustny);
+    printf("%lld %lld %lld", person, korzina, grustny);
     return 0;
 }

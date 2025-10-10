@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <cstdio>
 int main() 
 {
     long long a = 0;
@@ -9,6 +9,6 @@ int main()
     b = a/100;
     c = (a%100)/10;
     d = a%10;
-    printf("%lld\n", b+c+d);
+    printf("%lld", b+c+d);
     return 0;
 }

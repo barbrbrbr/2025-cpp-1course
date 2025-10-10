@@ -1,5 +1,4 @@
-#include <stdio.h>
-
+#include <cstdio>
 int main() 
 {
     long long a = 0, 
@@ -7,6 +6,6 @@ int main()
     long long c = 0;
 	scanf("%lld %lld", &a, &b);
     c = (a%b) * (b%a) + 1;
-    printf("%d\n", c);
+    printf("%d", c);
     return 0;
 }
