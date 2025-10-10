@@ -1,4 +1,4 @@
-#include <cstdio>
+ls#include <cstdio>
 
 int main() 
 {
@@ -8,8 +8,8 @@ int main()
     long long korzina = 0;
     long long grustny = 0;
 	scanf("%lld %lld", &n, &k);
-    person = k/n;  
-    korzina = k%n;
+    person = k / n;  
+    korzina = k % n;
     grustny = (n - k % n) % n;
     printf("%lld %lld %lld", person, korzina, grustny);
     return 0;
