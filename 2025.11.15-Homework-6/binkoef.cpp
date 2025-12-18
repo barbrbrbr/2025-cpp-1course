@@ -4,11 +4,13 @@ int C(int n, int k);
 
 int main(int argc, char** argv)
 {
-    int n, k;
+    int n = 0;
+    int k = 0;
     scanf("%d %d", &n, &k);
     
-    int result = C(n, k);
-    printf("%d\n", result);
+    int res = 0;
+    res = C(n, k);
+    printf("%d\n", res);
     
     return 0;
 }

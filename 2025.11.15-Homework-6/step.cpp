@@ -9,7 +9,8 @@ int main(int argc, char** argv)
     
     scanf("%lf %d", &a, &n);
     
-    double res = power(a, n);
+    double res = 0;
+    res = power(a, n);
     printf("%g", res);
     
     return 0;

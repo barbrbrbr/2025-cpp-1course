@@ -4,7 +4,7 @@ char ch_reg(char c);
 
 int main(int argc, char** argv)
 {
-    char c;
+    char c = 0;
     scanf("%c", &c);
     
     printf("%c", ch_reg(c));

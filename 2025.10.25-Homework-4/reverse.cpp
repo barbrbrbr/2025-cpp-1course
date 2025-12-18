@@ -3,7 +3,7 @@
 #define size 1000
 
 int main() {
-    int n;
+    int n = 0;
     scanf("%d", &n);
     
     int A[size];

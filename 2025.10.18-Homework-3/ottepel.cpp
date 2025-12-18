@@ -3,8 +3,8 @@
 int main()
 {
     int days = 0;
-    int cur= 0;
-    int maxl= 0;
+    int cur = 0;
+    int maxl = 0;
     
     scanf("%d", &days);
 

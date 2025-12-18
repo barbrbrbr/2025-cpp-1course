@@ -4,7 +4,7 @@ void hanoi(int n, int from, int to, int temp);
 
 int main(int argc, char** argv)
 {
-    int n;
+    int n = 0;
     scanf("%d", &n);
     
     hanoi(n, 1, 2, 3);

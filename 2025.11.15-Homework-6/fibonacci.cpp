@@ -4,11 +4,12 @@ long long fibonacci(int n);
 
 int main(int argc, char** argv)
 {
-    int n;
+    int n = 0;
     scanf("%d", &n);
     
-    long long result = fibonacci(n);
-    printf("%lld", result);
+    long long res = 0;
+    res = fibonacci(n);
+    printf("%lld", res);
     
     return 0;
 }

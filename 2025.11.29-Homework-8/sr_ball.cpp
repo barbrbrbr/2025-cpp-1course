@@ -9,7 +9,7 @@ typedef struct {
 } Student;
 
 int main(int argc, char** argv) {
-    int n;
+    int n = 0;
     scanf("%d", &n);
     
     Student students[1000];

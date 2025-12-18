@@ -9,9 +9,10 @@ int main(int argc, char** argv)
     
     scanf("%s", str);
     
-    char result = find_double_letter(str);
+    char res =0;
+    res = find_double_letter(str);
     
-    printf("%c", result);
+    printf("%c", res);
     
     return 0;
 }

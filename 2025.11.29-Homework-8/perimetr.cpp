@@ -9,7 +9,7 @@ typedef struct {
 double dist(Point a, Point b);
 
 int main(int argc, char** argv) {
-    int n;
+    int n = 0;
     scanf("%d", &n);
     
     Point points[100];

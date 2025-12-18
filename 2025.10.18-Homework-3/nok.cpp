@@ -2,8 +2,8 @@
 
 int main()
 {
-    int a;
-    int b;
+    int a = 0;
+    int b = 0;
     int nok = 0;
     int nod = 0;
 

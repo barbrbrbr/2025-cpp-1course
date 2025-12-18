@@ -11,7 +11,8 @@ int main(int argc, char** argv)
     
     scanf("%d %d %d %d", &a, &b, &c, &d);
     
-    int res = min(a, b, c, d);
+    int res = 0;
+    res = min(a, b, c, d);
     printf("%d\n", res);
     
     return 0;

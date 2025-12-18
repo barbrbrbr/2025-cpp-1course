@@ -7,9 +7,10 @@ int main(int argc, char** argv)
     long long n = 0;
     scanf("%lld", &n);
     
-    int result = prime(n);
+    int res = 0;
+    res = prime(n);
     
-    if (result) {
+    if (res) {
         printf("prime");
     } else {
         printf("composite");

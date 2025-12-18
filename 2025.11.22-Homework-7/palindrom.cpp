@@ -9,9 +9,10 @@ int main(int argc, char** argv)
     
     scanf("%s", str);
     
-    int result = is_palindrome(str);
+    int res = 0;
+    res = is_palindrome(str);
     
-    if (result) {
+    if (res) {
         printf("yes");
     } else {
         printf("no");
