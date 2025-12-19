@@ -35,7 +35,7 @@ void add_supply(SupplyList* sl, const char* date, int quantity) {
                                        sl->capacity * sizeof(Supply));
     }
     
-    // Добавляем новую поставку
+    // новая поставка
     strncpy(sl->supplies[sl->count].date, date, 19);
     sl->supplies[sl->count].date[19] = '\0';
     sl->supplies[sl->count].quantity = quantity;
@@ -114,9 +114,9 @@ void clear_last_linebreak(char* str) {
 }
 
 int main(int argc, char** argv) {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "Rus");
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    setlocale(LC_ALL, "ru_RU.UTF-8");
     
     int n = 0;
     printf("Введите количество товаров: ");

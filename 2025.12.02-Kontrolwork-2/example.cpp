@@ -109,9 +109,8 @@ void clear_last_linebreak(char* str) {
 }
 
 int main(int argc, char** argv) {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
-    setlocale(LC_ALL, "Rus");
+    system("chcp 65001 > nul");
+    setlocale(LC_ALL, "ru_RU.UTF-8");
     
     int n = 0;
     printf("Введите количество студентов: ");
@@ -123,15 +122,19 @@ int main(int argc, char** argv) {
     // Ввод данных о студентах
     for (int i = 0; i < n; i++) {
         printf("\nСтудент %d:\n", i + 1);
+
         printf("Имя: ");
         fgets(students[i].name, sizeof(students[i].name), stdin);
         clear_last_linebreak(students[i].name);
+
         printf("Возраст: ");
-        scanf("%d", &students[i].age);
+        scanf("%d", &students[i].age);        
+        clear_input_buffer(); // Очищаем после scanf
 
         int grade_count = 0;
         printf("Количество оценок: ");
         scanf("%d", &grade_count);
+        clear_input_buffer(); // Очищаем после scanf
 
         printf("Введите %d оценок: ", grade_count);
         for (int j = 0; j < grade_count; j++) {
